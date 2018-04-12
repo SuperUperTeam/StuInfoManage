@@ -1,4 +1,4 @@
-package com.stuInfoManage;
+package com.stuInfoManage.test;
 
 public class TestMain {
 
