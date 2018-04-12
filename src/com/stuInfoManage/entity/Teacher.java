@@ -92,5 +92,11 @@ public class Teacher {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+
+	@Override
+	public String toString() {
+		return "Teacher [id=" + id + ", num=" + num + ", name=" + name + ", gender=" + gender + ", age=" + age
+				+ ", remark=" + remark + "]";
+	}
 	
 }

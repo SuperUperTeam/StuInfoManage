@@ -65,5 +65,11 @@ public class Admin {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Admin [id=" + id + ", num=" + num + "]";
+	}
+	
 	
 }

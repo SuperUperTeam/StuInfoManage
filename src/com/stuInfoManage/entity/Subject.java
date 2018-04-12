@@ -3,31 +3,39 @@ package com.stuInfoManage.entity;
 import com.stuInfoManage.anno.Cloumn;
 import com.stuInfoManage.anno.Table;
 
-@Table("student")
-public class Student {
+@Table("subject")
+public class Subject {
 	
-	//学生id
+	//id
 	@Cloumn("id")
 	private int id;
 	
-	//学生编号
-	@Cloumn("stu_num")
+	//课程编号
+	@Cloumn("sub_num")
 	private String num;
 	
-	//学生姓名
-	@Cloumn("stu_name")
+	//课程名称
+	@Cloumn("sub_name")
 	private String name;
 	
-	//学生性别
-	@Cloumn("stu_gender")
-	private int gender;
+	//课程学分
+	@Cloumn("sub_credit")
+	private int credit;
 	
-	//学生年龄
-	@Cloumn("stu_age")
-	private int age;
+	//课时
+	@Cloumn("sub_hour")
+	private int hour;
 	
-	//学生表备注
-	@Cloumn("stu_remark")
+	//课程状态1：选修课 2必修课
+	@Cloumn("sub_status")
+	private int status;
+	
+	//授课教师
+	@Cloumn("sub_teacher")
+	private String teacher;
+	
+	//备注
+	@Cloumn("sub_reamark")
 	private String remark;
 
 	public int getId() {
@@ -54,20 +62,36 @@ public class Student {
 		this.name = name;
 	}
 
-	public int getGender() {
-		return gender;
+	public int getCredit() {
+		return credit;
 	}
 
-	public void setGender(int gender) {
-		this.gender = gender;
+	public void setCredit(int credit) {
+		this.credit = credit;
 	}
 
-	public int getAge() {
-		return age;
+	public int getHour() {
+		return hour;
 	}
 
-	public void setAge(int age) {
-		this.age = age;
+	public void setHour(int hour) {
+		this.hour = hour;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
+	public String getTeacher() {
+		return teacher;
+	}
+
+	public void setTeacher(String teacher) {
+		this.teacher = teacher;
 	}
 
 	public String getRemark() {
@@ -78,17 +102,19 @@ public class Student {
 		this.remark = remark;
 	}
 
-	public Student(int id, String num, String name, int gender, int age, String remark) {
+	public Subject(int id, String num, String name, int credit, int hour, int status, String teacher, String remark) {
 		super();
 		this.id = id;
 		this.num = num;
 		this.name = name;
-		this.gender = gender;
-		this.age = age;
+		this.credit = credit;
+		this.hour = hour;
+		this.status = status;
+		this.teacher = teacher;
 		this.remark = remark;
 	}
 
-	public Student() {
+	public Subject() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -97,12 +123,14 @@ public class Student {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + age;
-		result = prime * result + gender;
+		result = prime * result + credit;
+		result = prime * result + hour;
 		result = prime * result + id;
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		result = prime * result + ((num == null) ? 0 : num.hashCode());
 		result = prime * result + ((remark == null) ? 0 : remark.hashCode());
+		result = prime * result + status;
+		result = prime * result + ((teacher == null) ? 0 : teacher.hashCode());
 		return result;
 	}
 
@@ -114,10 +142,10 @@ public class Student {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Student other = (Student) obj;
-		if (age != other.age)
+		Subject other = (Subject) obj;
+		if (credit != other.credit)
 			return false;
-		if (gender != other.gender)
+		if (hour != other.hour)
 			return false;
 		if (id != other.id)
 			return false;
@@ -136,14 +164,20 @@ public class Student {
 				return false;
 		} else if (!remark.equals(other.remark))
 			return false;
+		if (status != other.status)
+			return false;
+		if (teacher == null) {
+			if (other.teacher != null)
+				return false;
+		} else if (!teacher.equals(other.teacher))
+			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", num=" + num + ", name=" + name + ", gender=" + gender + ", age=" + age
-				+ ", remark=" + remark + "]";
+		return "Subject [id=" + id + ", num=" + num + ", name=" + name + ", credit=" + credit + ", hour=" + hour
+				+ ", status=" + status + ", teacher=" + teacher + ", remark=" + remark + "]";
 	}
-	
 	
 }

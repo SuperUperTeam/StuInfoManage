@@ -5,8 +5,22 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>欢迎访问学生管理系统</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
 </head>
 <body>
-
+	<table class="table table-striped table-hover"> 
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
 </body>
 </html>
