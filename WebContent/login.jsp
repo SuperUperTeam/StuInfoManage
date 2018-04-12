@@ -6,6 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>用户登录</title>
 
@@ -30,7 +31,6 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 		<style>
-			*{padding:0;margin: 0}
 			.col-center-block {
 				float: none;
 				display: block;
@@ -59,7 +59,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<span class="li-text">
-								欢迎使用信息关系后台系统，请填写登录信息....
+								欢迎使用信息关系后台系统，请填写登录信息
 							</span> 
 							<!--<a href="#"><strong>links</strong></a> -->
 							<!--<span class="li-text">-->
@@ -83,7 +83,7 @@
             <div class="inner-bg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2 text" style="padding: 15px">
+                        <div class="col-sm-8 col-sm-offset-2 text" style="padding: 25px">
                             <h1><strong>登录</strong> 信息管理系统</h1>
                             <div class="description">
                             	<p>
@@ -100,8 +100,8 @@
                         <div class="col-sm-5 form-box  col-center-block" style="padding-top: 10px">
                         	<div class="form-top">
                         		<div class="form-top-left">
-                        			<h3>User&nbsp;Login....</h3>
-                            		<p>Please fill in the personal login information:</p>
+                        			<h3><strong>用户登陆</strong></h3>
+                            		<p>请输入你的登陆信息:</p>
                         		</div>
                         		<div class="form-top-right">
                         			<i class="fa fa-pencil"></i>
@@ -121,7 +121,7 @@
 			                        	<!--&lt;!&ndash;<label class="sr-only" for="form-email">Email</label>&ndash;&gt;-->
 			                        	<!--&lt;!&ndash;<input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">&ndash;&gt;-->
 			                        <!--</div>-->
-			                        <button type="submit" class="btn">Login In..</button>
+			                        <button type="submit" class="btn">登陆</button>
 			                    </form>
 		                    </div>
                         </div>
