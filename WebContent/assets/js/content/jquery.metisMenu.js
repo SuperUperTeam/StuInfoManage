@@ -1,4 +1,4 @@
-;(function ($, window, document, undefined) {
+$(function () {
 
     var pluginName = "metisMenu",
         defaults = {
@@ -42,4 +42,4 @@
         });
     };
 
-})(jQuery, window, document);
+});
