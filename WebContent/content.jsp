@@ -241,13 +241,78 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 					<li>
-						<a href="#" class=active-menu""><i class="fa fa-dashboard"></i>管理员登陆</a>
+						<a href="#" class="active-menu"><i class="fa fa-dashboard"></i>管理员</a>
 					</li>
 					<li>
-						<a href="#"><i class="fa fa-dashboard"></i>教师登陆</a>
+                       <a href="#"><i class="fa fa-dashboard"></i>学生信息管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>查询所有学生信息</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>添加学生信息</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>修改学生信息</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>删除学生信息</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                       <a href="#"><i class="fa fa-dashboard"></i>教师信息管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>查询所有老师信息</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>添加老师信息</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>修改老师信息</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>删除老师信息</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                       <a href="#"><i class="fa fa-dashboard"></i>学生成绩管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>公共课程学生成绩查询</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>选修课程学生成绩查询</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                       <a href="#"><i class="fa fa-dashboard"></i>选修课管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>查看所有选修课科目</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>修改选修课信息</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>添加选修课信息</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dashboard"></i>删除选修课</a>
+                            </li>
+                        </ul>
+                    </li>
+					<li>
+						<a href="#"><i class="fa fa-dashboard"></i>发布通知</a>
 					</li>
 					<li>
-						<a href="#"><i class="fa fa-dashboard"></i>学生登陆</a>
+						<a href="#" class="active-menu"><i class="fa fa-dashboard"></i>教师登陆</a>
+					</li>
+					<li>
+						<a href="#" class="active-menu"><i class="fa fa-dashboard"></i>学生登陆</a>
 					</li>
                     
                 </ul>
@@ -257,7 +322,7 @@
         </nav>
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper">
-        	111
+        	
         </div>
          <!-- /. PAGE WRAPPER  -->
     </div>
