@@ -26,6 +26,10 @@ public class Teacher {
 	@Cloumn("tea_age")
 	private int age;
 	
+	//教师状态 1:正常  2:已删除
+	@Cloumn("tea_status")
+	private int status;
+		
 	//教师备注
 	@Cloumn("tea_remark")
 	private String remark;
@@ -70,6 +74,14 @@ public class Teacher {
 		this.age = age;
 	}
 
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
 	public String getRemark() {
 		return remark;
 	}
@@ -78,13 +90,20 @@ public class Teacher {
 		this.remark = remark;
 	}
 
-	public Teacher(int id, String num, String name, int gender, int age, String remark) {
+	@Override
+	public String toString() {
+		return "Teacher [id=" + id + ", num=" + num + ", name=" + name + ", gender=" + gender + ", age=" + age
+				+ ", status=" + status + ", remark=" + remark + "]";
+	}
+
+	public Teacher(int id, String num, String name, int gender, int age, int status, String remark) {
 		super();
 		this.id = id;
 		this.num = num;
 		this.name = name;
 		this.gender = gender;
 		this.age = age;
+		this.status = status;
 		this.remark = remark;
 	}
 
@@ -93,10 +112,5 @@ public class Teacher {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public String toString() {
-		return "Teacher [id=" + id + ", num=" + num + ", name=" + name + ", gender=" + gender + ", age=" + age
-				+ ", remark=" + remark + "]";
-	}
 	
 }
