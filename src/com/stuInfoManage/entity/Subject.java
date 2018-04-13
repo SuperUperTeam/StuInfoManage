@@ -26,13 +26,17 @@ public class Subject {
 	@Cloumn("sub_hour")
 	private int hour;
 	
-	//课程状态1：选修课 2必修课
-	@Cloumn("sub_status")
-	private int status;
+	//课程类型  ：1 选修课 2必修课
+	@Cloumn("sub_type")
+	private int type;
 	
 	//授课教师
 	@Cloumn("sub_teacher")
 	private String teacher;
+	
+	//课程状态1:正常 2已删除
+	@Cloumn("sub_status")
+	private int status;
 	
 	//备注
 	@Cloumn("sub_reamark")
@@ -78,12 +82,12 @@ public class Subject {
 		this.hour = hour;
 	}
 
-	public int getStatus() {
-		return status;
+	public int getType() {
+		return type;
 	}
 
-	public void setStatus(int status) {
-		this.status = status;
+	public void setType(int type) {
+		this.type = type;
 	}
 
 	public String getTeacher() {
@@ -94,6 +98,14 @@ public class Subject {
 		this.teacher = teacher;
 	}
 
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
 	public String getRemark() {
 		return remark;
 	}
@@ -102,15 +114,23 @@ public class Subject {
 		this.remark = remark;
 	}
 
-	public Subject(int id, String num, String name, int credit, int hour, int status, String teacher, String remark) {
+	@Override
+	public String toString() {
+		return "Subject [id=" + id + ", num=" + num + ", name=" + name + ", credit=" + credit + ", hour=" + hour
+				+ ", type=" + type + ", teacher=" + teacher + ", status=" + status + ", remark=" + remark + "]";
+	}
+
+	public Subject(int id, String num, String name, int credit, int hour, int type, String teacher, int status,
+			String remark) {
 		super();
 		this.id = id;
 		this.num = num;
 		this.name = name;
 		this.credit = credit;
 		this.hour = hour;
-		this.status = status;
+		this.type = type;
 		this.teacher = teacher;
+		this.status = status;
 		this.remark = remark;
 	}
 
@@ -119,65 +139,6 @@ public class Subject {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + credit;
-		result = prime * result + hour;
-		result = prime * result + id;
-		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		result = prime * result + ((num == null) ? 0 : num.hashCode());
-		result = prime * result + ((remark == null) ? 0 : remark.hashCode());
-		result = prime * result + status;
-		result = prime * result + ((teacher == null) ? 0 : teacher.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Subject other = (Subject) obj;
-		if (credit != other.credit)
-			return false;
-		if (hour != other.hour)
-			return false;
-		if (id != other.id)
-			return false;
-		if (name == null) {
-			if (other.name != null)
-				return false;
-		} else if (!name.equals(other.name))
-			return false;
-		if (num == null) {
-			if (other.num != null)
-				return false;
-		} else if (!num.equals(other.num))
-			return false;
-		if (remark == null) {
-			if (other.remark != null)
-				return false;
-		} else if (!remark.equals(other.remark))
-			return false;
-		if (status != other.status)
-			return false;
-		if (teacher == null) {
-			if (other.teacher != null)
-				return false;
-		} else if (!teacher.equals(other.teacher))
-			return false;
-		return true;
-	}
-
-	@Override
-	public String toString() {
-		return "Subject [id=" + id + ", num=" + num + ", name=" + name + ", credit=" + credit + ", hour=" + hour
-				+ ", status=" + status + ", teacher=" + teacher + ", remark=" + remark + "]";
-	}
+	
 	
 }
