@@ -309,11 +309,29 @@
 						<a href="#"><i class="fa fa-dashboard"></i>发布通知</a>
 					</li>
 					<li>
-						<a href="#" class="active-menu"><i class="fa fa-dashboard"></i>教师登陆</a>
+						<a href="#" class="active-menu"><i class="fa fa-dashboard"></i>教师</a>
 					</li>
+					<li>
+                       <a href="#"><i class="fa fa-dashboard"></i>个人信息查看</a>
+                    </li>
+                    <li>
+                       <a href="#"><i class="fa fa-dashboard"></i>学生成绩管理</a>
+                    </li>
+                    <li>
+                       <a href="#"><i class="fa fa-dashboard"></i>学生选修课管理</a>
+                    </li>
 					<li>
 						<a href="#" class="active-menu"><i class="fa fa-dashboard"></i>学生登陆</a>
 					</li>
+					<li>
+                       <a href="#"><i class="fa fa-dashboard"></i>个人信息查看</a>
+                    </li>
+                    <li>
+                       <a href="#"><i class="fa fa-dashboard"></i>个人成绩查询</a>
+                    </li>
+                    <li>
+                       <a href="#"><i class="fa fa-dashboard"></i>在线选课</a>
+                    </li>
                     
                 </ul>
 
